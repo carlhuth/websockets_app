@@ -1,6 +1,6 @@
-Realtime ChatApp
+## Realtime ChatApp
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
