@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from 'react-dom';
+import 'bootstrap';
+import 'font-awesome/css/font-awesome.css';
+import './app.scss';
+import Navbar from './components/Navbar';
+import Chat from './components/chat/Chat';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+    render(){
+        return(
+            <React.Fragment>
+                <Navbar/>
+                <Chat/>
+            </React.Fragment>
+        )
+    }
 }
 
-export default App;
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+);
